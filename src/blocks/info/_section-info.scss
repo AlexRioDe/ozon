@@ -1,0 +1,20 @@
+.section-info{
+  min-height: 700px;
+  background-image: url("../images/info-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  &__text{
+    color: $color-blue2;
+    font-size: 24px;
+    font-weight: bold;
+    width: 488px;
+    background: #fff;
+    padding: 22px;
+    border-radius: 22px;
+    text-align: center;
+  }
+}

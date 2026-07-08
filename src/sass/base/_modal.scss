@@ -1,0 +1,99 @@
+.modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  &.fade{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    @include web_transition(opacity .15s linear);
+    .modal-dialog{
+      @include web_transform(translate(0,-25%));
+      @include web_transition(transform .3s ease-out);
+    }
+  }
+  &.in{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    .modal-dialog{
+      @include web_transform(translate(0,0));
+    }
+  }
+  &-open{
+    overflow: hidden;
+    .modal{
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+  &-backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+    &.fade{
+      filter: alpha(opacity=0);
+      opacity: 0;
+    }
+    &.in{
+      filter: alpha(opacity=50);
+      opacity: .5;
+    }
+  }
+  &-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+  }
+  &-dialog{
+    max-width: 520px;
+    margin: 15% auto 0;
+    position: relative;
+    width: auto;
+  }
+  &-content{
+    border-radius: 5px;
+    position: relative;
+    outline: 0;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: $color_white;
+  }
+  &-body{
+    font-size: 20px;
+    padding: 45px 20px;
+    position: relative;
+    .title{
+      font-weight: bold;
+      margin-bottom: 15px;
+      margin-top: 35px;
+    }
+  }
+  &-btn{
+    margin-top: 35px;
+  }
+  .close{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    right: -60px;
+    top: -40px;
+    border: 0;
+    background: url("../images/close.png") no-repeat center;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+}

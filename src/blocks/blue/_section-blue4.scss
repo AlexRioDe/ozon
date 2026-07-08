@@ -1,0 +1,69 @@
+.section-blue4{
+  background: $color-blue;
+  padding: 48px 0;
+  .container{
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 48%;
+    background: $color-white;
+    margin-bottom: 24px;
+    &_image{
+
+    }
+    &_title{
+      font-weight: 700;
+      font-size: 36px;
+      color: $color-blue;
+
+    }
+    &_text{
+      font-weight: 400;
+      font-size: 20px;
+      color:$color-blue2;
+
+    }
+  }
+
+
+
+  &__content{
+    flex: 1;
+    &_info{
+      font-weight: 400;
+      font-size: 30px;
+      color: #BBD3FF;
+      padding-bottom: 24px;
+    }
+    &_title{
+      font-weight: 700;
+      font-size: 52px;
+      color: $color-white;
+      padding-bottom: 24px;
+    }
+    &_text{
+      font-weight: 400;
+      font-size: 20px;
+      color: #BBD3FF;
+      padding-bottom: 24px;
+    }
+  }
+  &__image{
+    flex: 1;
+    background-image: url("../images/blue.png");
+    background-size: contain;
+    background-position: center;
+    height: 494px;
+    background-repeat: no-repeat;
+    &_text{
+
+    }
+  }
+}

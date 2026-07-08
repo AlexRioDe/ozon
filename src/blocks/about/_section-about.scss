@@ -1,0 +1,32 @@
+.section-about{
+    min-height: 944px;
+    //background-image: url("../images/about.png");
+    background: #d0d0d0;
+    background-size: cover;
+    background-position: center;
+    .container{
+        max-width: 1280px;
+    }
+    &__line{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_img{
+            flex: 1;
+            img{}
+        }
+        &_text{
+            flex: 1;
+            &-small{
+                font-size: 30px;
+                color: #005BFF;
+                padding-bottom: 30px;
+            }
+            &-big{
+                font-size: 56px;
+                font-weight: bold;
+                color: #00215C;
+            }
+        }
+    }
+}

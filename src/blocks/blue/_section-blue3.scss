@@ -1,0 +1,45 @@
+.section-blue3{
+  background: $color-blue;
+  padding: 48px 0;
+  .container{
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__content{
+    flex: 1;
+    &_info{
+      font-weight: 400;
+      font-size: 26px;
+      color:  $color-white;
+      margin-bottom: 24px;
+      padding: 12px;
+      border-radius: 12px;
+      background: $color-red_1;
+    }
+    &_title{
+      font-weight: 700;
+      font-size: 52px;
+      color: $color-white;
+      padding-bottom: 24px;
+    }
+    &_text{
+      font-weight: 400;
+      font-size: 20px;
+      color: #BBD3FF;
+      padding-bottom: 24px;
+    }
+  }
+  &__image{
+    flex: 1;
+    //background-image: url("../images/blue.png");
+    //background-size: contain;
+    //background-position: center;
+    //height: 494px;
+    //background-repeat: no-repeat;
+    //&_text{
+    //
+    //}
+  }
+}

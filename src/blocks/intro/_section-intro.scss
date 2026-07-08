@@ -1,0 +1,24 @@
+.section-intro{
+  min-height: 944px;
+  background-image: url("../images/intro.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .btn-intro{
+    background: $color_red_1;
+    height: 66px;
+    max-width: max-content;
+    padding: 12px;
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    border-radius: 44px;
+
+  }
+}
