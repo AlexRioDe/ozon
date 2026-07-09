@@ -1,12 +1,9 @@
 .section-about{
     min-height: 944px;
-    //background-image: url("../images/about.png");
-    background: #d0d0d0;
+    background-image: url("../images/about-bg.png");
+    //background: #d0d0d0;
     background-size: cover;
     background-position: center;
-    .container{
-        max-width: 1280px;
-    }
     &__line{
         display: flex;
         align-items: center;

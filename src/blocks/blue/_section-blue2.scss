@@ -1,20 +1,11 @@
 .section-blue2{
-  background: $color-blue;
-  padding: 48px 0;
+  background-image: url("../images/blue-bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 108px 0 0;
   .container{
-    max-width: 1280px;
     position: relative;
-    &:after{
-      content: '';
-      position: absolute;
-      height: 118px;
-      width: 100%;
-      bottom: 0;
-      right: 0;
-      background: linear-gradient(180deg, rgba(0, 91, 255, 0) 0%, rgba(0, 91, 255, 0.5) 50%, #005BFF 100%);
-    }
-
-
   }
   &__content{
     &_info{
@@ -27,48 +18,97 @@
       font-weight: 700;
       font-size: 76px;
       color: $color-white;
-      padding-bottom: 24px;
+      padding-bottom: 44px;
+      span{
+        background-image: url("../images/blue-2-bg-text.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0 16px;
+      }
     }
     &_text{
       font-weight: 700;
       font-size: 36px;
       color: $color-white;
-      padding-bottom: 24px;
+     
     }
   }
   &__info{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 6px;
     position: relative;
-    padding-bottom: 388px;
+    padding-bottom: 218px;
     &_box{
-      flex: 1;
       //background: $color_white;
       padding: 22px;
       border-radius: 12px;
-      min-height: 195px;
+      min-height: 205px;
+      &.box1-2{
+        padding-top: 0;
+      }
       &.box1{
-        background: #fff;
+        width: 260px;
+        background-image: url("../images/blue-2-bg-box1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        b{
+          font-weight: bold;
+          display: inline-block;
+        }
+        a{
+          color: $color-blue;
+          text-decoration: underline;
+          &:hover{
+            text-decoration: none;
+          }
+        }
       }
       &.box2{
+        width: 310px;
         .box2-head{
-          background: linear-gradient(180.38deg, #005BFF 0.33%, #00215F 58.63%);
+          background: #00215FFF;
           font-size: 20px;
           color: $color-white;
+          font-weight: bold;
+          padding: 12px;
+          border-radius: 12px;
+          text-align: center;
         }
         .box2-content{
           background: #00000026;
-
+          padding: 12px;
+          border-radius: 12px;
           p{
             color: $color-white;
             font-size: 16px;
+            position: relative;
+            padding-left: 32px;
+            padding-bottom: 12px;
+            line-height: 22px;
+            max-width: 212px;
             span{
+              position: absolute;
+              left: 10px;
+              top: 4px;
               color: $color-red_1;
             }
           }
         }
+      }
+      &.box3{
+        flex: 1;
       }
     }
     &_image{

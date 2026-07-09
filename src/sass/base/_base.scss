@@ -1,4 +1,4 @@
-$font_family: 'Open Sans', Arial, Helvetica, sans-serif;
+$font_family: 'gte', Arial, Helvetica, sans-serif;
 $color_white: #ffffff;
 $color_black: #000000;
 $color_gray_1: #333333;
@@ -138,7 +138,7 @@ h4, .h4{
   @include web_transition(all 0.2s ease-in-out);
 }
 .container{
-  max-width: 1470px;
+  max-width: 1230px;
   margin: 0 auto;
   position: relative;
   padding-left: 15px;

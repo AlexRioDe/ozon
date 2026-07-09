@@ -11,8 +11,11 @@
     justify-content: space-between;
     top: -124px;
     position: relative;
+    padding: 0 32px;
+    gap: 32px;
     &__img{
-
+      position: relative;
+      margin-top: -62px;
     }
     &__info{
       &_text{
@@ -35,11 +38,13 @@
       &_btn{
         width: 234px;
         height: 61px;
+        font-size: 20px;
         background: $color-blue2;
         color: $color-white;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 12px;
       }
     }
   }

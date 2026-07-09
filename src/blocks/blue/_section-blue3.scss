@@ -1,5 +1,8 @@
 .section-blue3{
-  background: $color-blue;
+  background-image: url("../images/blue-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 48px 0;
   .container{
     max-width: 1280px;
@@ -10,13 +13,17 @@
   &__content{
     flex: 1;
     &_info{
-      font-weight: 400;
       font-size: 26px;
       color:  $color-white;
       margin-bottom: 24px;
-      padding: 12px;
+      padding: 14px 24px;
+      font-weight: 700;
+      margin-left: -23px;
       border-radius: 12px;
-      background: $color-red_1;
+      background-image: url("../images/blue-3-bg-text.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     &_title{
       font-weight: 700;
@@ -26,9 +33,10 @@
     }
     &_text{
       font-weight: 400;
-      font-size: 20px;
-      color: #BBD3FF;
-      padding-bottom: 24px;
+      font-size: 24px;
+      line-height: 31px;
+      color: #bbd3ff;
+      max-width: 544px;
     }
   }
   &__image{

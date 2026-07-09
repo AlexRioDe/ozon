@@ -5,33 +5,52 @@
   padding: 48px 0;
   padding-bottom: 324px;
   .container{
-    max-width: 1280px;
     display: flex;
-    align-items: center;
+    //align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 88px;
   }
+  
   &__box{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 58px 24px;
     gap: 24px;
-    width: 48%;
-    background: $color-white;
+    width: calc(48% - 50px);
+    background-image: url("../images/blue-4-bg-box.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 24px;
+    border-radius: 22px;
     &_image{
-
+      margin-top: -104px;
     }
     &_title{
       font-weight: 700;
       font-size: 36px;
       color: $color-blue;
-
+      text-align: center;
     }
     &_text{
       font-weight: 400;
       font-size: 20px;
       color:$color-blue2;
-
+      text-align: center;
+      max-width: 424px;
+      b{
+        font-weight: bold;
+      }
+      a{
+        color: $color-blue;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+      }
     }
   }
 

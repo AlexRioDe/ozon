@@ -7,12 +7,15 @@
 
 
 .section-blue{
-  background: $color-blue;
-  padding: 48px 0;
+  //background: $color-blue;
+  background-image: url("../images/blue-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 130px 0 80px;
   .container{
-    max-width: 1280px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
   &__content{
@@ -21,7 +24,7 @@
       font-weight: 400;
       font-size: 30px;
       color: #BBD3FF;
-      padding-bottom: 24px;
+      padding-bottom: 34px;
     }
     &_title{
       font-weight: 700;
@@ -31,18 +34,20 @@
     }
     &_text{
       font-weight: 400;
-      font-size: 20px;
-      color: #BBD3FF;
+      font-size: 24px;
+      max-width: 454px;
+      color: #bbd3ff;
       padding-bottom: 24px;
     }
   }
   &__image{
-    flex: 1;
+    height: 384px;
+    background-repeat: no-repeat;
+    width: 546px;
     background-image: url("../images/blue.png");
     background-size: contain;
     background-position: center;
-    height: 494px;
-    background-repeat: no-repeat;
+   
     &_text{
 
     }
