@@ -49,6 +49,27 @@
       padding: 22px;
       border-radius: 12px;
       min-height: 195px;
+      &.box1{
+        background: #fff;
+      }
+      &.box2{
+        .box2-head{
+          background: linear-gradient(180.38deg, #005BFF 0.33%, #00215F 58.63%);
+          font-size: 20px;
+          color: $color-white;
+        }
+        .box2-content{
+          background: #00000026;
+
+          p{
+            color: $color-white;
+            font-size: 16px;
+            span{
+              color: $color-red_1;
+            }
+          }
+        }
+      }
     }
     &_image{
       position: absolute;

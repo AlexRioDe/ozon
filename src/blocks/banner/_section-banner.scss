@@ -1,0 +1,46 @@
+.section-banner{
+  background: #d0d0d0;
+  .container{
+    max-width: 1230px;
+  }
+  .banner{
+    background: $color-blue;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: -124px;
+    position: relative;
+    &__img{
+
+    }
+    &__info{
+      &_text{
+        font-size: 30px;
+        color: $color-white;
+        padding-bottom: 24px;
+        b{
+          font-weight: bold;
+        }
+      }
+      &_title{
+        font-size: 30px;
+        color: $color-white;
+        padding-bottom: 24px;
+        span{
+          background: $color-red_1;
+        }
+        font-weight: bold;
+      }
+      &_btn{
+        width: 234px;
+        height: 61px;
+        background: $color-blue2;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
