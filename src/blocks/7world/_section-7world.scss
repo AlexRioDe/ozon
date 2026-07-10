@@ -1,0 +1,70 @@
+.section-7world {
+	background: linear-gradient(180.38deg, #4888fb 0.33%, #1f53e9 58.63%);
+	padding-bottom: 166px;
+	.container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__left{
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		max-width: 520px;
+		&_title{
+			font-size: 62px;
+			font-weight: bold;
+			color: $color-white;
+		}
+		&_text{
+			font-size: 24px;
+			font-weight: bold;
+			color: $color-white;
+			b{
+				font-weight: bold;
+			}
+		}
+		&_img{
+			
+		}
+		
+	}
+	
+	&__content{
+		&_box2{
+			width: 409px;
+			background: $color_white;
+			border-radius: 30px;
+			&-top{
+				width: 100%;
+				background: #043690;
+				border-radius: 30px;
+				padding: 20px;
+				&--title{
+					font-size: 20px;
+					color: #BBD3FF;
+				}
+				&--text{
+					font-size: 30px;
+					font-weight: bold;
+					color: $color-white;
+				}
+			}
+			&-content{
+				font-size: 20px;
+				color: #122941;
+				padding: 20px;
+				b{
+					font-weight: bold;
+				}
+				a{
+					color: $color-blue;
+					text-decoration: underline;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

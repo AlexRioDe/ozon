@@ -29,4 +29,17 @@ $(document).ready(function () {
             $('header').removeClass('scrolled');
         }
     });
+
+    $('.faq-item__question').on('click', function () {
+        var $answer = $(this).siblings('.faq-item__answer');
+        var $arrow = $(this).find('.faq-item__question_arrow');
+
+        // Закрываем все другие ответы (опционально - для аккордеона)
+        $('.faq-item__answer').not($answer).slideUp(300);
+        $('.faq-item__question').not(this).removeClass('active');
+
+        // Переключаем текущий ответ
+        $answer.slideToggle(300);
+        $(this).toggleClass('active');
+    });
 });
