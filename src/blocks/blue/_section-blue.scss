@@ -1,5 +1,8 @@
 .boxBlue{
-
+  background-image: url("../images/blue-bg-glogal.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
 
@@ -8,10 +11,10 @@
 
 .section-blue{
   //background: $color-blue;
-  background-image: url("../images/blue-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  //background-image: url("../images/blue-bg.jpg");
+  //background-size: cover;
+  //background-position: center;
+  //background-repeat: no-repeat;
   padding: 130px 0 80px;
   .container{
     display: flex;
