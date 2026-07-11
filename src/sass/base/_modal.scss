@@ -57,27 +57,44 @@
     overflow: scroll;
   }
   &-dialog{
-    max-width: 520px;
-    margin: 15% auto 0;
+    max-width: 600px;
+    margin: 20% auto 0;
     position: relative;
     width: auto;
   }
   &-content{
-    border-radius: 5px;
+    border-radius: 30px;
     position: relative;
     outline: 0;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background: $color_white;
+    background-image: url("../images/modal-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   &-body{
     font-size: 20px;
     padding: 45px 20px;
+    
     position: relative;
     .title{
       font-weight: bold;
       margin-bottom: 15px;
       margin-top: 35px;
+      font-size: 36px;
+      color: $color-blue;
+    }
+    .text{
+      font-size: 24px;
+      color: #00215C;
+      a{
+        color: $color-blue;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+      }
     }
   }
   &-btn{
@@ -88,12 +105,15 @@
     width: 40px;
     height: 40px;
     line-height: 40px;
-    right: -60px;
-    top: -40px;
+    right: 30px;
+    top: 30px;
     border: 0;
+    z-index: 3;
     background: url("../images/close.png") no-repeat center;
+    transition: transform 0.3s ease;
     &:hover{
       opacity: 0.5;
+      transform: rotate(180deg);
     }
   }
 }

@@ -12,17 +12,35 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="modal fade" tabindex="-1" role="dialog" id="thanks">
+    <div class="modal fade" tabindex="-1" role="dialog" id="indicators">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">&nbsp;</button>
             <div class="modal-body">
                 <div class="text-center">
-                    <div class="title">Thank you for your registration!</div>
-                    <div class="text">We will send confirmation details to your e-mail!</div>
-                    <div class="modal-btn">
-                        <button type="button" class="btn btn-red" data-dismiss="modal">Done</button>
+                    <div class="title">Какие показатели <br/> мы считаем?</div>
+                    <div class="text">На основе твоих ответов рассчитываются
+                        5 индексов (удовлетворённость, лояльность, вовлечённость, eNPS, mNPS) и 9 метрик, например карьера, руководитель и другие.
                     </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="survey">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">&nbsp;</button>
+            <div class="modal-body">
+                <div class="text-center">
+                    <div class="title">Как пройти опрос</div>
+                    <div class="text">Ищи ссылку в письме<br/>
+                        от <a href="">hrinfo@sender.ozon.ru</a><br/>
+                        или переходи по баннеру<br/>
+                        в <a href="">Staff</a>.</div>
                 </div>
             </div>
         </div><!-- /.modal-content -->
@@ -205,7 +223,7 @@
                 На основе твоих ответов рассчитываются 5 индексов и 9 метрик.
             </div>
             <div class="section-blue4__box_text">
-                <a href="/">Подробнее</a>
+                <a href="#" data-toggle="modal" data-target="#indicators">Подробнее</a>
             </div>
         </div>
         <div class="section-blue4__box">
@@ -231,7 +249,7 @@
                 <div class="banner__info_text"><b>Не забудь: 15 минут</b> твоего внимания,
                     и все важные детали соединятся!</div>
                 <div class="banner__info_title"><span>С 20 июля по 4 августа</span> включительно</div>
-                <div class="banner__info_btn">Как пройти опрос</div>
+                <a href="#" class="banner__info_btn" data-toggle="modal" data-target="#survey">Как пройти опрос</a>
             </div>
         </div>
     </div>
@@ -260,6 +278,14 @@
                 <div class="controls">
                     <button id="reset-btn">⟳ заново</button>
                     <div class="message" id="status-message">играй</div>
+                </div>
+                <div class="box-done">
+                    <div class="box-done__title">Поздравляем!</div>
+                    <div class="box-done__text">Все пары собраны</div>
+                    <div class="box-done__img">
+                        <img src="/src/images/box-done.png" alt="">
+                    </div>
+                    <a href="/" class="box-done__btn">Пройти опрос</a>
                 </div>
             </div>
         </div>
@@ -479,6 +505,40 @@
 </div>
         </div>
 
+<div class="modal fade" tabindex="-1" role="dialog" id="indicators">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">&nbsp;</button>
+            <div class="modal-body">
+                <div class="text-center">
+                    <div class="title">Какие показатели <br/> мы считаем?</div>
+                    <div class="text">На основе твоих ответов рассчитываются
+                        5 индексов (удовлетворённость, лояльность, вовлечённость, eNPS, mNPS) и 9 метрик, например карьера, руководитель и другие.
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="survey">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="btn close" data-dismiss="modal" aria-label="Close">&nbsp;</button>
+            <div class="modal-body">
+                <div class="text-center">
+                    <div class="title">Как пройти опрос</div>
+                    <div class="text">Ищи ссылку в письме<br/>
+                        от <a href="">hrinfo@sender.ozon.ru</a><br/>
+                        или переходи по баннеру<br/>
+                        в <a href="">Staff</a>.</div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <footer class="footer">
     <div class="container">
         <div class="flexible">

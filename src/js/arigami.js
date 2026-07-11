@@ -104,6 +104,7 @@
     // ---------- ПРОВЕРКА ПОБЕДЫ ----------
     function checkGameComplete() {
         if (matchedPairs === TOTAL_PAIRS) {
+            document.querySelector('.game-container').classList.add('done');
             statusMsg.textContent = '🎉 победа! 🎉';
             return true;
         }
