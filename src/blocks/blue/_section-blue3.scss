@@ -1,17 +1,28 @@
 .section-blue3{
-  //background-image: url("../images/blue-bg.jpg");
-  //background-size: cover;
-  //background-position: center;
-  //background-repeat: no-repeat;
   padding: 48px 0;
   .container{
-    max-width: 1280px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(max-width: 1024px) {
+      flex-direction: column-reverse;
+      padding-bottom: 24px;
+    }
   }
   &__content{
     flex: 1;
+    @media(max-width: 1024px) {
+      text-align: center;
+    }
+    &_title{
+      font-weight: 700;
+      font-size: 52px;
+      color: $color-white;
+      padding-bottom: 24px;
+      @media(max-width: 1024px) {
+        font-size: 38px;
+      }
+    }
     &_info{
       font-size: 26px;
       color:  $color-white;
@@ -24,12 +35,9 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-    }
-    &_title{
-      font-weight: 700;
-      font-size: 52px;
-      color: $color-white;
-      padding-bottom: 24px;
+      @media(max-width: 1024px) {
+        font-size: 18px;
+      }
     }
     &_text{
       font-weight: 400;
@@ -37,6 +45,9 @@
       line-height: 31px;
       color: #bbd3ff;
       max-width: 544px;
+      @media(max-width: 1024px) {
+        font-size: 18px;
+      }
     }
   }
   &__image{

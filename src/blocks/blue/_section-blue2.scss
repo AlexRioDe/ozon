@@ -1,24 +1,34 @@
 .section-blue2{
-  //background-image: url("../images/blue-bg2.jpg");
-  //background-size: cover;
-  //background-position: center;
-  //background-repeat: no-repeat;
   padding: 108px 0 0;
+  @media(max-width: 1024px) {
+    padding: 44px 0 0;
+  }
   .container{
     position: relative;
   }
   &__content{
+    @media(max-width: 1024px) {
+      text-align: center;
+    }
     &_info{
       font-weight: 400;
       font-size: 30px;
       color: #BBD3FF;
       padding-bottom: 24px;
+      @media(max-width: 1024px) {
+        font-size: 18px;
+        padding-bottom: 14px;
+      }
     }
     &_title{
       font-weight: 700;
       font-size: 76px;
       color: $color-white;
       padding-bottom: 44px;
+      @media(max-width: 1024px) {
+        font-size: 38px;
+        padding-bottom: 344px;
+      }
       span{
         background-image: url("../images/blue-2-bg-text.png");
         background-size: cover;
@@ -31,7 +41,9 @@
       font-weight: 700;
       font-size: 36px;
       color: $color-white;
-     
+      @media(max-width: 1024px) {
+        font-size: 28px;
+      }
     }
   }
   &__info{
@@ -41,6 +53,10 @@
     gap: 6px;
     position: relative;
     padding-bottom: 218px;
+    @media(max-width: 1024px) {
+      flex-direction: column;
+      padding-bottom: 24px;
+    }
     &_box{
       //background: $color_white;
       padding: 22px;
@@ -63,6 +79,9 @@
         flex-direction: column;
         position: relative;
         z-index: 2;
+        @media(max-width: 1024px) {
+          width: 320px;
+        }
         b{
           font-weight: bold;
           display: inline-block;
@@ -77,6 +96,10 @@
       }
       &.box2{
         width: 310px;
+        @media(max-width: 1024px) {
+          width: 320px;
+          padding: 0;
+        }
         .box2-head{
           background: #00215FFF;
           font-size: 20px;
@@ -109,12 +132,30 @@
       }
       &.box3{
         flex: 1;
+        @media(max-width: 1024px) {
+          min-height: 0;
+          height: 0;
+          padding: 0;
+        }
       }
     }
     &_image{
       position: absolute;
       bottom: 0;
       right: 0;
+      @media(max-width: 1024px) {
+        bottom: 100%;
+        height: 344px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 100%;
+        img{
+          object-fit: contain;
+          height: 100%;
+          object-position: center;
+          width: 100%;
+        }
+      }
     }
   }
 }

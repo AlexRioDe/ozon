@@ -8,6 +8,16 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+  @media(max-width: 1024px) {
+    min-height: 550px;
+    background-image: url("../images/intro-mob.png");
+    &:after{
+      display: none;
+    }
+    .btn-intro{
+      display: none!important;
+    }
+  }
   &:after{
     content: '';
     position: absolute;

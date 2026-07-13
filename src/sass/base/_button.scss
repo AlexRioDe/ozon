@@ -34,17 +34,17 @@
       display: inline-block;
       vertical-align: top;
       background: $color_white;
-      width: 22px;
+      width: 24px;
       height: 2px;
       @include web_transition(all .2s ease-in-out);
       &+.icon-bar{
         margin-top: 5px;
       }
       &:nth-child(2){
-        width: 18px;
+        width: 24px;
       }
       &:nth-child(3){
-        width: 20px;
+        width: 24px;
       }
     }
     &.open{
