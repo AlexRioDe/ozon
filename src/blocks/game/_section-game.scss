@@ -1,6 +1,7 @@
 .section-game{
-  padding-top: 200px;
-  background-image: url("../images/game-bg.png");
+  padding-top: 290px;
+  padding-bottom: 143px;
+  background-image: url("../images/game-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,7 +20,7 @@
       background-image: url("../images/game-bg-box.png");
       background-size: cover;
       background-position: center;
-      border-radius: 22px;
+      border-radius: 30px;
       padding: 20px;
       display: flex;
       align-items: center;
@@ -30,12 +31,13 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 30px;
+      gap: 20px;
       &_title{
-        font-size: 62px;
+        font-size: 51px;
         font-weight: 700;
         color: $color-white;
         text-align: left;
+        
         @media(max-width: 1024px) {
           font-size: 38px;
           text-align: center;
@@ -43,20 +45,23 @@
         }
       }
       &_text{
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 700;
         color: $color-white;
         position: relative;
+        padding-bottom: 51px;
+        max-width: 290px;
         @media(max-width: 1024px) {
           font-size: 24px;
           text-align: center;
           color: #00215C;
+          padding-bottom: 0;
         }
         &:after{
           content: '';
           position: absolute;
-          right: 0;
-          bottom: 0;
+          right: -70px;
+          bottom: 20px;
           background-image: url("../images/arrow.png");
           background-size: contain;
           background-position: center;
@@ -69,6 +74,7 @@
         }
       }
       &_box{
+        max-width: 370px;
         background: #043690;
         border-radius: 20px;
         padding: 28px;
@@ -76,12 +82,15 @@
         color: $color-white;
         text-align: center;
         p{
-          font-size: 16px;
+          font-size: 20px;
           color: #bbd3ff;
           display: block;
         }
         b{
           font-weight: bold;
+          font-size: 30px;
+          display: block;
+          padding-top: 12px;
         }
       }
     }
@@ -126,7 +135,7 @@
           
         }
         &__btn{
-          width: 234px;
+          min-width: 256px;
           height: 61px;
           font-size: 20px;
           background: $color-blue2;
@@ -134,7 +143,31 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          gap: 12px;
+          padding: 6px 24px;
           border-radius: 12px;
+          position: relative;
+          z-index: 2;
+          transition: all 0.3s ease-in;
+          span{
+            transition: all 0.3s ease-in;
+            position: relative;
+            background-image: url("../images/arrow-btn.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 24px;
+            display: block;
+            right: 0;
+          }
+          &:hover{
+            background: #012C78;
+            span{
+              right: -8px;
+              transition: all 0.3s ease-in;
+            }
+          }
         }
       }
       &.done{
@@ -166,9 +199,9 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(4, 140px);
-      grid-template-rows: repeat(4, 140px);
-      gap: 14px;
+      grid-template-columns: repeat(4, 154px);
+      grid-template-rows: repeat(4, 154px);
+      gap: 10px;
     }
 
     .card {
@@ -203,7 +236,7 @@
       background-image: url("../images/game/bg-card-game.png");
       background-size: cover;
       background-position: center;
-      height: 140px;
+      height: 154px;
       background-repeat: no-repeat;
       @media (max-width: 650px) {
         height: 84px;

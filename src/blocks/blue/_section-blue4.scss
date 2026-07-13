@@ -4,7 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 88px;
+    gap: 25px;
+    max-width: 1110px;
     @media(max-width: 1024px) {
       flex-direction: column;
       padding-bottom: 24px;
@@ -19,9 +20,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 58px 24px;
-    gap: 24px;
-    width: calc(48% - 50px);
+    padding: 72px 24px 102px;
+    gap: 28px;
+    width: calc(50% - 50px);
     background-image: url("../images/blue-4-bg-box.png");
     background-size: contain;
     background-position: center;

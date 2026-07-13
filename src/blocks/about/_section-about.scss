@@ -5,7 +5,7 @@
     background-position: center;
     @media(max-width: 1024px) {
         min-height: inherit;
-        padding: 20px 0; 
+        padding: 40px 0 60px; 
     }
     &__line{
         display: flex;
@@ -13,14 +13,18 @@
         justify-content: center;
         @media(max-width: 1024px) {
             flex-direction: column;
+            .section-about__line_img img {
+                margin-right: -34px;
+            }
         }
         &:last-child{
             @media(max-width: 1024px) {
-                padding-top: 20px;
+                padding-top: 30px;
                 flex-direction: column-reverse;
                 .section-about__line_img{
                     img{
-                        max-width: 60%;
+                        max-width: 80%;
+                        margin-right: 0px;
                     }
                 }
             }
@@ -32,8 +36,9 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                
                 img{
-                    max-width: 50%;
+                    max-width: 55%;
                 }
             }
         }
@@ -50,7 +55,7 @@
                 padding-bottom: 30px;
                 @media(max-width: 1024px) {
                     font-size: 16px;
-                    padding-bottom: 14px;
+                    padding-bottom: 4px;
                 }
             }
             &-big{
