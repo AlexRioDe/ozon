@@ -20,9 +20,9 @@
             <div class="header-nav" id="navbar">
                 <ul class="nav">
                     <li><a class="link scroll-page" href="#about">Об опросе</a></li>
-                    <li><a class="link" href="#">Что такое вовлечённость?</a></li>
-                    <li><a class="link" href="#">Потренируйся замечать важные детали</a></li>
-                    <li><a class="link scroll-page" href="#contact">Вопросы и ответы</a></li>
+                    <li><a class="link scroll-page" href="#active">Что такое вовлечённость?</a></li>
+                    <li><a class="link scroll-page" href="#details">Потренируйся замечать важные детали</a></li>
+                    <li><a class="link scroll-page" href="#faq">Вопросы и ответы</a></li>
                 </ul>
             </div>
             <div class="header-menu">
@@ -42,7 +42,7 @@
         <img class="hide-desktop" src="/src/images/h1-mob.png" alt="">
         <p class="btn-intro">Детали важны</p>
 </section>
-            <section class="section-about" id="about">
+            <section class="section-about">
     <div class="container">
        <div class="section-about__line">
            <div class="section-about__line_img">
@@ -99,7 +99,7 @@
         </div>
     </div>
 </div>
-                       <div class="section-blue2">
+                       <div class="section-blue2" >
     <div class="container">
         <div class="section-blue2__content">
             <div class="section-blue2__content_info">Без твоего участия ничего не сложится</div>
@@ -140,7 +140,7 @@
         </div>
     </div>
 </div>
-                       <div class="section-blue3">
+                       <div class="section-blue3" id="active">
     <div class="container">
         <div class="section-blue3__content">
             <div class="section-blue3__content_title">Что такое вовлечённость?</div>
@@ -206,7 +206,7 @@
         
     </div>
 </div>
-                   <div class="section-banner">
+                   <div class="section-banner" id="about">
     <div class="container">
         <div class="banner">
             <div class="banner__img">
@@ -216,14 +216,14 @@
                 <div class="banner__info_text"><b>Не забудь: 15 минут</b> твоего внимания,
                     и все важные детали соединятся!</div>
                 <div class="banner__info_title"><span>С 20 июля по 4 августа</span> включительно</div>
-                <a href="#" class="banner__info_btn" data-toggle="modal" data-target="#survey">Как пройти опрос</a>
+                <a href="#" class="banner__info_btn" data-toggle="modal" data-target="#survey">Как пройти опрос <span></span></a>
             </div>
         </div>
     </div>
 </div>
                </div>
             
-            <div class="section-game">
+            <div class="section-game" id="details">
     <div class="container">
         <h2>Потренируйся замечать <br/> важные детали </h2>
         <div class="game">
@@ -231,8 +231,11 @@
                 <div class="game__info_title">Ищи пары!</div>
                 <div class="game__info_text">Найдёшь все?<br/>
                     Сможешь выиграть подарки</div>
-                <div class="game__info_box">С помощью рандомайзера
-                    мы разыграем <b>100 промокодов на Ozon на сумму 1 000 рублей.</b> </div>
+                <div class="game__info_box">
+                    <p>А среди всех, кто справился,
+                        мы рандомно разыграем:</p>
+                    <b>100 промокодов на 1000 баллов на Ozon</b> 
+                </div>
             </div>
             <div class="game-container">
                 <div class="score-panel">
@@ -303,22 +306,25 @@
 			<div class="section-7world__left_text">
 				Слова часто складываются в важные мысли, идеи. <b>Именно такими мы делимся, когда участвуем в опросе. А некоторые предлагаем услышать самим!</b>
 			</div>
-			<div class="section-7world__left_img">
+			<div class="section-7world__left_img hide-tablet">
 				<img src="/src/images/section-7world.png" alt="">
 			</div>
 		</div>
 		<div class="section-7world__content_box2">
+			<div class="section-7world__left_img hide-desktop">
+				<img src="/src/images/section-7world-mob.png" alt="">
+			</div>
 			<div class="section-7world__content_box2-content">
-				<b>Станьте первыми!</b><br/>
-				Посмотреть статистику
-				по дирекции в моменте можно
-				по своей индивидуальной ссылке
-				в почте или по баннеру на Staff.
-				А итоги розыгрышей ищи в канале <a href="/">announcements.</a>
+				<b>Что делать:</b><br/>
+				<p><span>/</span> следи за постами в <a href="/">announcements.</a> — ищи слова с хештегом #
+				</p>
+				<p><span>/</span>собери из 7 слов предложение со смыслом</p>
+				<p><span>/</span>сложи фразу и отправь её в <a href="/">эту форму.</a></p>
 			</div>
 			<div class="section-7world__content_box2-top">
-				<div class="section-7world__content_box2-top--title">Призовой фонд:</div>
-				<div class="section-7world__content_box2-top--text">600 промокодов на 1000 баллов на Ozon</div>
+				<div class="section-7world__content_box2-top--title">А среди всех, кто справился,
+					мы рандомно разыграем:</div>
+				<div class="section-7world__content_box2-top--text">100 промокодов на 1000 баллов на Ozon</div>
 			</div>
 		</div>
 	</div>
@@ -327,11 +333,11 @@
     <div class="container">
         <div class="banner2">
             <div class="banner2__title">Играй и забирай баллы на Ozon. У тебя 3 шанса!</div>
-            <div class="banner2__btn">Условия участия</div>
+            <a href="#" class="banner2__btn" data-toggle="modal" data-target="#survey">Как пройти опрос <span></span></a>
         </div>
     </div>
 </div>
-            <div class="section-faq">
+            <div class="section-faq" id="faq">
 	<div class="container">
 		<div class="section-faq__title">Вопросы и ответы</div>
 		<div class="faq">
@@ -512,9 +518,9 @@
             <a class="footer-logo" href="index.html"><img src="/src/images/Vector.svg"></a>
             <ul class="nav">
                 <li><a class="link scroll-page" href="#about">Об опросе</a></li>
-                <li><a class="link" href="#">Что такое вовлечённость?</a></li>
-                <li><a class="link" href="#">Потренируйся замечать важные детали</a></li>
-                <li><a class="link scroll-page" href="#contact">Вопросы и ответы</a></li>
+                <li><a class="link scroll-page" href="#active">Что такое вовлечённость?</a></li>
+                <li><a class="link scroll-page" href="#details">Потренируйся замечать важные детали</a></li>
+                <li><a class="link scroll-page" href="#faq">Вопросы и ответы</a></li>
             </ul>
         </div>
     </div>

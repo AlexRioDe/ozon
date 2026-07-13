@@ -5,6 +5,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@media(max-width: 1024px) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__left{
 		display: flex;
@@ -15,11 +19,20 @@
 			font-size: 62px;
 			font-weight: bold;
 			color: $color-white;
+			@media(max-width: 1024px) {
+				font-size: 38px;
+				text-align: center;
+			}
 		}
 		&_text{
 			font-size: 24px;
 			font-weight: bold;
 			color: $color-white;
+			@media(max-width: 1024px) {
+				font-size: 18px;
+				text-align: center;
+				padding-bottom: 24px;
+			}
 			b{
 				font-weight: bold;
 			}
@@ -35,6 +48,13 @@
 			width: 409px;
 			background: $color_white;
 			border-radius: 30px;
+			@media(max-width: 1024px) {
+				max-width: 409px;
+				width: 100%;
+			}
+			.section-7world__left_img{
+				padding: 20px 20px 0;
+			}
 			&-top{
 				width: 100%;
 				background: #043690;
@@ -51,12 +71,28 @@
 				}
 			}
 			&-content{
-				font-size: 20px;
+				font-size: 24px;
 				color: #122941;
 				padding: 20px;
 				b{
-					font-weight: bold;
+					display: block;
+					padding-bottom: 12px;
 				}
+				p{
+					color: #03002E;
+					font-size: 24px;
+					position: relative;
+					padding-left: 32px;
+					padding-bottom: 12px;
+					line-height: 22px;
+					span{
+						position: absolute;
+						left: 10px;
+						top: 4px;
+						color: $color-red_1;
+					}
+				}
+				
 				a{
 					color: $color-blue;
 					text-decoration: underline;

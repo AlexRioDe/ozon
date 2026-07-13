@@ -14,7 +14,9 @@ header{
   //  padding-top: 70px;
   //}
   transition: all 0.3s ease;
-   
+  @media(max-width: 1199px) {
+    line-height: 60px;
+  }
   
   &.scrolled {
     background: rgba(0, 0, 0, 0.4); 
@@ -32,6 +34,9 @@ header{
     .nav{
       display: flex;
       gap: 42px;
+      @media(max-width: 1199px) {
+        gap: 24px;
+      }
     }
     li{
       display: inline-block;
@@ -39,6 +44,9 @@ header{
       //margin: 0 15px;
       position: relative;
       font-size: 20px;
+      @media(max-width: 1199px) {
+        font-size: 16px;
+      }
       a{
         cursor: pointer;
         color: $color-white;
@@ -80,13 +88,13 @@ header{
   }
 }
 @media(max-width: 1040px) {
-  .header{
-    &-nav{
-      li{
-        margin: 0 10px;
-      }
-    }
-  }
+  //.header{
+  //  &-nav{
+  //    li{
+  //      margin: 0 10px;
+  //    }
+  //  }
+  //}
 }
 @media(min-width: 941px) {
   .header-nav{

@@ -1,7 +1,10 @@
 .footer{
   z-index: 10;
-  padding: 124px 0;
+  padding: 62px 0;
   background: #00215F;
+  @media(max-width: 1024px) {
+    padding: 42px 0;
+  }
   
   &-logo{
     text-transform: uppercase;
@@ -10,12 +13,21 @@
       vertical-align: middle;
     }
   }
-.flexible{
-  justify-content: space-between;
-}
+  .flexible{
+    justify-content: space-between;
+    @media(max-width: 1024px) {
+      justify-content: center;
+    }
+  }
     .nav {
       display: flex;
       gap: 42px;
+      @media(max-width: 1199px) {
+        gap: 24px;
+      }
+      @media(max-width: 1024px) {
+        display: none;
+      }
     }
   
     li {
@@ -24,6 +36,9 @@
       //margin: 0 15px;
       position: relative;
       font-size: 20px;
+      @media(max-width: 1199px) {
+        font-size: 18px;
+      }
     
       a {
         cursor: pointer;
