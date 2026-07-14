@@ -59,6 +59,14 @@
 			width: 100%;
 			background: $color_white;
 			border-radius: 30px;
+			&.animate{
+				opacity: 0;
+				transform: translateY(-100px);
+				&.animated{
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
 			@media(max-width: 1024px) {
 				max-width: 409px;
 				width: 100%;

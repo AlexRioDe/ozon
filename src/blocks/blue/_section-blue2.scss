@@ -25,6 +25,14 @@
       font-size: 76px;
       color: $color-white;
       padding-bottom: 44px;
+      &.animate{
+        opacity: 0;
+        transform: translateY(-100px);
+        &.animated{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
       @media(max-width: 1024px) {
         font-size: 38px;
         padding-bottom: 314px;
@@ -86,6 +94,14 @@
         position: relative;
         z-index: 2;
         color: #001628;
+        &.animate{
+          opacity: 0;
+          transform: translateX(-100px);
+          &.animated{
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
         @media(max-width: 1024px) {
           width: 320px;
           font-size: 18px;
@@ -105,6 +121,7 @@
         }
       }
       &.box1-2{
+        transition: 0.3s ease 0.1s;
         @media(max-width: 1024px) {
           margin-top: 8px;
           img{
@@ -114,7 +131,6 @@
       }
       &.box2{
         width: 310px;
-        
         @media(max-width: 1024px) {
           width: 320px;
           padding: 0;

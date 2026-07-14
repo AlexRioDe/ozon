@@ -104,6 +104,14 @@
         position: relative;
         z-index: 2;
         transition: all 0.3s ease-in;
+        &.animate{
+          opacity: 0;
+          transform: translateX(100px);
+          &.animated{
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
         @media(max-width: 1024px) {
           max-width: 316px;
           width: 100%;
@@ -152,6 +160,14 @@
     padding: 40px;
     min-height: 154px;
     overflow: hidden;
+    &.animate{
+      opacity: 0;
+      transform: translateX(-100px);
+      &.animated{
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
     @media(max-width: 767px) {
       flex-direction: column;
       gap: 24px;

@@ -59,6 +59,14 @@
   }
   &__image{
     flex: 1;
+    &.animate{
+      opacity: 0;
+      transform: translateX(100px);
+      &.animated{
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
     @media(max-width: 1024px) {
       img{
         max-width: 320px;

@@ -41,6 +41,14 @@
       font-size: 52px;
       color: $color-white;
       padding-bottom: 24px;
+      &.animate{
+        opacity: 0;
+        transform: translateX(-100px);
+        &.animated{
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
       @media(max-width: 1024px) {
         font-size: 38px;
         padding-bottom: 32px;

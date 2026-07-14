@@ -12,20 +12,33 @@
         align-items: center;
         justify-content: center;
         @media(max-width: 1024px) {
-            flex-direction: column;
             .section-about__line_img img {
                 margin-right: -34px;
             }
         }
+        @media(max-width: 767px) {
+            flex-direction: column;
+        }
+        
         &:last-child{
             @media(max-width: 1024px) {
                 padding-top: 30px;
-                flex-direction: column-reverse;
                 .section-about__line_img{
                     img{
                         max-width: 80%;
                         margin-right: 0px;
                     }
+                }
+            }
+            @media(max-width: 767px) {
+                flex-direction: column-reverse;
+            }
+            .section-about__line_text.animate{
+                opacity: 0;
+                transform: translateX(-100px);
+                &.animated{
+                    opacity: 1;
+                    transform: translateX(0);
                 }
             }
         }
@@ -43,6 +56,14 @@
             }
         }
         &_text{
+            &.animate{
+                opacity: 0;
+                transform: translateX(100px);
+                &.animated{
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
             flex: 1;
             @media(max-width: 1024px) {
                 text-align: center;

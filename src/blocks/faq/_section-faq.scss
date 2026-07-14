@@ -14,7 +14,7 @@
 		font-size: 76px;
 		font-weight: bold;
 		padding-bottom: 46px;
-		@media(max-width: 767px) {
+		@media(max-width: 1024px) {
 			font-size: 38px;
 			text-align: center;
 			padding-bottom: 34px;
@@ -28,7 +28,7 @@
 		&__item{
 			background: #00215F;
 			border-radius: 30px;
-			@media(max-width: 767px) {
+			@media(max-width: 1024px) {
 				border-radius: 20px;
 			}
 			.faq-item__question{
@@ -39,7 +39,7 @@
 				align-items: center;
 				padding: 30px 50px;
 				border-radius: 30px;
-				@media(max-width: 767px) {
+				@media(max-width: 1024px) {
 					padding: 20px 30px;
 					border-radius: 20px;
 				}
@@ -51,7 +51,7 @@
 				&_title{
 					color: $color-white;
 					font-size: 30px;
-					@media(max-width: 767px) {
+					@media(max-width: 1024px) {
 						font-size: 18px;
 						max-width: 90%;
 					}
@@ -61,7 +61,7 @@
 					transform: scale(1.5);
 					color: $color-white;
 					font-size: 30px;
-					@media(max-width: 767px) {
+					@media(max-width: 1024px) {
 						font-size: 18px;
 					}
 				}
@@ -78,7 +78,7 @@
 						text-decoration: none;
 					}
 				}
-				@media(max-width: 767px) {
+				@media(max-width: 1024px) {
 					font-size: 16px;
 					padding: 20px 30px;
 				}
