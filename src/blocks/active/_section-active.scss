@@ -57,7 +57,7 @@
 				height: 351px;
 				position: absolute;
 				left: 0;
-				top: 120px;
+				top: 140px;
 				z-index: 2;
 			}
 		}
@@ -79,7 +79,7 @@
 			justify-content: space-between;
 			@media(max-width: 1024px) {
 				flex-direction: column;
-				gap: 240px;
+				gap: 260px;
 				align-items: center;
 			}
 		}

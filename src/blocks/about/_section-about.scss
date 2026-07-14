@@ -20,12 +20,19 @@
             flex-direction: column;
         }
         
+        &:first-child{
+            .section-about__line_img {
+                img{
+                    max-width: 70%;
+                }
+            }
+        }
         &:last-child{
             @media(max-width: 1024px) {
                 padding-top: 30px;
                 .section-about__line_img{
                     img{
-                        max-width: 80%;
+                        max-width: 80%!important;
                         margin-right: 0px;
                     }
                 }
@@ -44,14 +51,14 @@
         }
         &_img{
             flex: 1;
-            img{}
+            
             @media(max-width: 1024px) {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 
                 img{
-                    max-width: 55%;
+                    max-width: 55%!important;
                 }
             }
         }
