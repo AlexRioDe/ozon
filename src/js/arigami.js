@@ -5,22 +5,23 @@
     //  Пример: '/src/images/game/game-men.png'
     // ============================================================
     const MY_IMAGES = [
-        '/src/images/game/1.png',   // пара 1
-        '/src/images/game/1.png',   // пара 1 (дубликат)
-        '/src/images/game/2.png', // пара 2
-        '/src/images/game/2.png', // пара 2 (дубликат)
-        '/src/images/game/3.png',// пара 3
-        '/src/images/game/3.png',// пара 3 (дубликат)
-        '/src/images/game/4.png',// пара 4
-        '/src/images/game/4.png',// пара 4 (дубликат)
-        '/src/images/game/5.png',// пара 5
-        '/src/images/game/5.png',// пара 5 (дубликат)
-        '/src/images/game/6.png',// пара 6
-        '/src/images/game/6.png',// пара 6 (дубликат)
-        '/src/images/game/7.png',// пара 7
-        '/src/images/game/7.png',// пара 7 (дубликат)
-        '/src/images/game/8.png',// пара 8
-        '/src/images/game/8.png' // пара 8 (дубликат)
+        './images/game/1.png',   // пара 1
+        './images/game/1.png',   // пара 1 (дубликат)
+        './images/game/2.png', // пара 2
+        './images/game/2.png', // пара 2 (дубликат)
+        './images/game/3.png',// пара 3
+        './images/game/3.png',// пара 3 (дубликат)
+        './images/game/4.png',// пара 4
+        './images/game/4.png',// пара 4 (дубликат)
+        './images/game/5.png',// пара 5
+        './images/game/5.png',// пара 5 (дубликат)
+        './images/game/6.png',// пара 6
+        './images/game/6.png',// пара 6 (дубликат)
+        './images/game/7.png',// пара 7
+        './images/game/7.png',// пара 7 (дубликат)
+        './images/game/8.png',// пара 8
+        './images/game/8.png' // пара 8 (дубликат)
+        // '/src/images/game/8.png' // пара 8 (дубликат)
     ];
     // ============================================================
     //  Если картинок меньше 16, игра не запустится.
