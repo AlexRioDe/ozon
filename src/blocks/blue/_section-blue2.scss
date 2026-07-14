@@ -17,7 +17,7 @@
       padding-bottom: 24px;
       @media(max-width: 1024px) {
         font-size: 18px;
-        padding-bottom: 14px;
+        padding-bottom: 24px;
       }
     }
     &_title{
@@ -27,7 +27,10 @@
       padding-bottom: 44px;
       @media(max-width: 1024px) {
         font-size: 38px;
-        padding-bottom: 344px;
+        padding-bottom: 314px;
+        span{
+          display: inline-block;
+        }
       }
       span{
         background-image: url("../images/blue-2-bg-text.png");
@@ -43,6 +46,9 @@
       color: $color-white;
       @media(max-width: 1024px) {
         font-size: 28px;
+        max-width: 320px;
+        padding-bottom: 24px;
+        margin: 0 auto;
       }
     }
   }
@@ -79,8 +85,12 @@
         flex-direction: column;
         position: relative;
         z-index: 2;
+        color: #001628;
         @media(max-width: 1024px) {
           width: 320px;
+          font-size: 18px;
+          padding: 22px 40px;
+          min-height: 182px;
         }
         b{
           font-weight: bold;
@@ -94,8 +104,17 @@
           }
         }
       }
+      &.box1-2{
+        @media(max-width: 1024px) {
+          margin-top: 8px;
+          img{
+            max-width: 153px;
+          }
+        }
+      }
       &.box2{
         width: 310px;
+        
         @media(max-width: 1024px) {
           width: 320px;
           padding: 0;
@@ -108,11 +127,17 @@
           padding: 12px;
           border-radius: 12px;
           text-align: center;
+          @media(max-width: 1024px) {
+            font-size: 18px;
+          }
         }
         .box2-content{
           background: #00000026;
           padding: 12px;
           border-radius: 12px;
+          @media(max-width: 1024px) {
+            padding: 16px 7px;
+          }
           p{
             color: $color-white;
             font-size: 16px;
@@ -144,11 +169,11 @@
       bottom: 0;
       right: 0;
       @media(max-width: 1024px) {
-        bottom: 100%;
+        bottom: 113%;
         height: 344px;
         right: 50%;
         transform: translateX(50%);
-        width: 100%;
+        width: calc(100% + 30px);
         img{
           object-fit: contain;
           height: 100%;

@@ -12,7 +12,7 @@
 .section-blue{
   padding: 130px 0 80px;
   @media(max-width: 1024px) {
-    padding: 80px 0 44px;
+    padding: 80px 0 12px;
   }
   .container{
     display: flex;
@@ -43,6 +43,7 @@
       padding-bottom: 24px;
       @media(max-width: 1024px) {
         font-size: 38px;
+        padding-bottom: 32px;
       }
     }
     &_text{
@@ -54,6 +55,7 @@
       @media(max-width: 1024px) {
         font-size: 18px;
         margin: 0 auto;
+        padding-bottom: 40px;
       }
     }
   }

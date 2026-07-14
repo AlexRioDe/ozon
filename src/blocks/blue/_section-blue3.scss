@@ -1,5 +1,8 @@
 .section-blue3{
   padding: 48px 0;
+  @media(max-width: 1024px) {
+    padding: 24px 0;
+  }
   .container{
     display: flex;
     align-items: center;
@@ -21,6 +24,7 @@
       padding-bottom: 24px;
       @media(max-width: 1024px) {
         font-size: 38px;
+        padding-bottom: 14px;
       }
     }
     &_info{
@@ -37,6 +41,7 @@
       background-repeat: no-repeat;
       @media(max-width: 1024px) {
         font-size: 18px;
+        margin-left: 0;
       }
     }
     &_text{
@@ -47,11 +52,20 @@
       max-width: 544px;
       @media(max-width: 1024px) {
         font-size: 18px;
+        line-height: 22px;
       }
+      
     }
   }
   &__image{
     flex: 1;
+    @media(max-width: 1024px) {
+      img{
+        max-width: 320px;
+        position: relative;
+        right: -24px;
+      }
+    }
     //background-image: url("../images/blue.png");
     //background-size: contain;
     //background-position: center;

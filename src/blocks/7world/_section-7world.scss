@@ -6,6 +6,10 @@
 	background-repeat: no-repeat;
 	padding-bottom: 68px;
 	padding-top: 64px;
+	@media(max-width: 1024px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 	.container{
 		display: flex;
 		align-items: center;
@@ -28,6 +32,7 @@
 			@media(max-width: 1024px) {
 				font-size: 38px;
 				text-align: center;
+				padding-bottom: 0;
 			}
 		}
 		&_text{
@@ -36,7 +41,7 @@
 			@media(max-width: 1024px) {
 				font-size: 18px;
 				text-align: center;
-				padding-bottom: 24px;
+				padding-bottom: 40px;
 			}
 			b{
 				font-weight: bold;
@@ -57,6 +62,7 @@
 			@media(max-width: 1024px) {
 				max-width: 409px;
 				width: 100%;
+				border-radius: 20px;
 			}
 			.section-7world__left_img{
 				padding: 20px 20px 0;
@@ -67,21 +73,37 @@
 				border-radius: 30px;
 				padding: 40px;
 				text-align: center;
+				@media(max-width: 1024px) {
+					border-radius: 20px;
+					padding: 32px 40px;
+				}
 				&--title{
 					font-size: 20px;
 					color: #BBD3FF;
 					padding-bottom: 12px;
+					@media(max-width: 1024px) {
+						font-size: 16px;
+					}
 				}
 				&--text{
 					font-size: 30px;
 					font-weight: bold;
 					color: $color-white;
+					@media(max-width: 1024px) {
+						font-size: 24px;
+					}
 				}
 			}
 			&-content{
 				font-size: 24px;
 				color: #122941;
 				padding: 40px 70px 0;
+				@media(max-width: 1024px) {
+					font-size: 18px;
+					color: #122941;
+					padding: 16px 40px 0;
+				}
+				
 				b{
 					display: block;
 					padding-bottom: 4px;
@@ -93,11 +115,21 @@
 					position: relative;
 					padding-left: 32px;
 					padding-bottom: 30px;
+					@media(max-width: 1024px) {
+						font-size: 16px;
+						line-height: 18px;
+						position: relative;
+						padding-left: 15px;
+						padding-bottom: 22px;
+					}
 					span{
 						position: absolute;
 						left: 10px;
 						top: 4px;
 						color: $color-red_1;
+						@media(max-width: 1024px) {
+							left: 0;
+						}
 					}
 				}
 				
