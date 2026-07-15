@@ -21,7 +21,7 @@
   .game{
    
     @media(min-width: 1025px) {
-      background-image: url("../images/game-bg-box.png");
+      background-image: url("../images/game-bg-box.jpg");
       background-size: cover;
       background-position: center;
       border-radius: 30px;
@@ -273,7 +273,7 @@
     /* Скрытая карта – показываем "?" и прячем картинку */
     .card.hidden {
       flex: 1;
-      background-image: url("../images/game/bg-card-game.png");
+      background-image: url("../images/game/bg-card-game.jpg");
       background-size: cover;
       background-position: center;
       height: 154px;

@@ -5,22 +5,22 @@
     //  Пример: '/src/images/game/game-men.png'
     // ============================================================
     const MY_IMAGES = [
-        './images/game/1.png',   // пара 1
-        './images/game/1.png',   // пара 1 (дубликат)
-        './images/game/2.png', // пара 2
-        './images/game/2.png', // пара 2 (дубликат)
-        './images/game/3.png',// пара 3
-        './images/game/3.png',// пара 3 (дубликат)
-        './images/game/4.png',// пара 4
-        './images/game/4.png',// пара 4 (дубликат)
-        './images/game/5.png',// пара 5
-        './images/game/5.png',// пара 5 (дубликат)
-        './images/game/6.png',// пара 6
-        './images/game/6.png',// пара 6 (дубликат)
-        './images/game/7.png',// пара 7
-        './images/game/7.png',// пара 7 (дубликат)
-        './images/game/8.png',// пара 8
-        './images/game/8.png' // пара 8 (дубликат)
+        './images/game/1.jpg',   // пара 1
+        './images/game/1.jpg',   // пара 1 (дубликат)
+        './images/game/2.jpg', // пара 2
+        './images/game/2.jpg', // пара 2 (дубликат)
+        './images/game/3.jpg',// пара 3
+        './images/game/3.jpg',// пара 3 (дубликат)
+        './images/game/4.jpg',// пара 4
+        './images/game/4.jpg',// пара 4 (дубликат)
+        './images/game/5.jpg',// пара 5
+        './images/game/5.jpg',// пара 5 (дубликат)
+        './images/game/6.jpg',// пара 6
+        './images/game/6.jpg',// пара 6 (дубликат)
+        './images/game/7.jpg',// пара 7
+        './images/game/7.jpg',// пара 7 (дубликат)
+        './images/game/8.jpg',// пара 8
+        './images/game/8.jpg' // пара 8 (дубликат)
         // '/src/images/game/8.png' // пара 8 (дубликат)
     ];
     // ============================================================
