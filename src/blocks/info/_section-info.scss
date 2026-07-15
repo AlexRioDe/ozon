@@ -1,6 +1,6 @@
 .section-info{
   min-height: 700px;
-  background-image: url("../images/info-bg.jpg");
+  //background-image: url("../images/info-bg.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -8,9 +8,22 @@
   flex-direction: column;
   justify-content: space-around;
   position: relative;
+  &__bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
   @media(max-width: 1024px) {
     min-height: 500px;
-    background-image: url("../images/info-bg-mob.jpg");
+    //background-image: url("../images/info-bg-mob.jpg");
   }
   &:after{
     content: '';

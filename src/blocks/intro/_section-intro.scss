@@ -1,6 +1,6 @@
 .section-intro{
   min-height: 900px;
-  background-image: url("../images/intro.png");
+  //background-image: url("../images/intro.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -8,9 +8,22 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+  &__bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
   @media(max-width: 1024px) {
     min-height: 550px;
-    background-image: url("../images/intro-mob.png");
+    //background-image: url("../images/intro-mob.png");
     &:after{
       display: none;
     }
@@ -23,6 +36,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 3;
     width: 100%;
     height: 100%;
     background-image: url("../images/intro2.png");
@@ -32,6 +46,7 @@
   &>img{
     position: relative;
     margin-top: -100px;
+    z-index: 1;
     &.animate{
       opacity: 0;
       transform: translateY(-100px);
@@ -56,5 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+    position: relative;
   }
 }
