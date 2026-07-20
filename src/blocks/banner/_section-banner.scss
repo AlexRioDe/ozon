@@ -60,10 +60,9 @@
       &_text{
         font-size: 20px;
         color: $color-white;
-        padding-bottom: 44px;
+        padding-bottom: 30px;
         @media(max-width: 1024px) {
           font-size: 18px;
-          padding-bottom: 44px;
           max-width: 300px;
           margin: 0 auto;
         }
@@ -74,7 +73,7 @@
       &_title{
         font-size: 44px;
         color: $color-white;
-        padding-bottom: 44px;
+        padding-bottom: 30px;
         @media(max-width: 1024px) {
           font-size: 38px;
           padding-bottom: 313px;

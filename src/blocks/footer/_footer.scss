@@ -46,9 +46,21 @@
         color: $color-white;
         text-decoration: none;
         @include web_transition(all .2s ease-in-out);
-      
-        &:hover {
-          color: $color-blue;
+        &:after{
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 2px;
+          width: 100%;
+          height: 1px;
+          border-radius: 2px;
+          background-color: transparent;
+        }
+        &:hover{
+          color: $color-white;
+          &:after{
+            background-color: $color-white;
+          }
         }
       }
     }

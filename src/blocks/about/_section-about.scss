@@ -55,12 +55,12 @@
         }
         &_img{
             flex: 1;
-            
+            transform: scale(1.2);
             @media(max-width: 1024px) {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
+                transform: scale(1);
                 img{
                     max-width: 55%!important;
                 }
