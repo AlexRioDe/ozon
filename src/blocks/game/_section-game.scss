@@ -1,5 +1,5 @@
 .section-game{
-  padding-top: 290px;
+  padding-top: 360px;
   padding-bottom: 143px;
   background-image: url("../images/game-bg.jpg");
   background-size: cover;
@@ -10,10 +10,12 @@
     padding-bottom: 20px;
   }
   h2{
-    font-size: 80px;
+    font-size: 56px;
     text-align: center;
-    padding-bottom: 55px;
+    padding-bottom: 95px;
     color: #122941;
+    max-width: 935px;
+    margin: 0 auto;
     @media(max-width: 1024px) {
       display: none;
     }
@@ -58,7 +60,7 @@
         color: $color-white;
         position: relative;
         padding-bottom: 51px;
-        max-width: 290px;
+        max-width: 420px;
         &.animate{
           opacity: 0;
           transform: translateX(-100px);
@@ -77,12 +79,12 @@
           content: '';
           position: absolute;
           right: -70px;
-          bottom: 20px;
+          top: -40px;
           background-image: url("../images/arrow.png");
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
-          width: 153px;
+          width: 164px;
           height: 49px;
           @media(max-width: 1024px) {
             display: none;
@@ -90,7 +92,7 @@
         }
       }
       &_box{
-        max-width: 370px;
+        max-width: 420px;
         background: #043690;
         border-radius: 30px;
         padding: 28px;
@@ -98,7 +100,7 @@
         color: $color-white;
         text-align: center;
         p{
-          font-size: 20px;
+          font-size: 16px;
           color: #bbd3ff;
           display: block;
           @media(max-width: 1024px) {
@@ -239,8 +241,8 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(4, 154px);
-      grid-template-rows: repeat(4, 154px);
+      grid-template-columns: repeat(4, 134px);
+      grid-template-rows: repeat(4, 134px);
       gap: 10px;
     }
 
@@ -276,7 +278,7 @@
       background-image: url("../images/game/bg-card-game.jpg");
       background-size: cover;
       background-position: center;
-      height: 154px;
+      height: 134px;
       background-repeat: no-repeat;
       @media (max-width: 650px) {
         height: 84px;

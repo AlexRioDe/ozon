@@ -1,5 +1,5 @@
 .section-faq{
-	padding-top: 175px;
+	padding-top: 130px;
 	padding-bottom: 88px;
 	background-image: url("../images/faq-bg.jpg");
 	background-size: cover;
@@ -11,9 +11,9 @@
 	}
 	&__title{
 		color: $color-white;
-		font-size: 76px;
+		font-size: 56px;
 		font-weight: bold;
-		padding-bottom: 46px;
+		padding-bottom: 44px;
 		@media(max-width: 1024px) {
 			font-size: 38px;
 			text-align: center;
@@ -37,10 +37,10 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				padding: 30px 50px;
+				padding: 15px 50px;
 				border-radius: 30px;
 				@media(max-width: 1024px) {
-					padding: 20px 30px;
+					padding: 15px 30px;
 					border-radius: 20px;
 				}
 				&.active {
@@ -50,7 +50,7 @@
 				}
 				&_title{
 					color: $color-white;
-					font-size: 30px;
+					font-size: 20px;
 					@media(max-width: 1024px) {
 						font-size: 18px;
 						max-width: 90%;
@@ -68,9 +68,9 @@
 			}
 			.faq-item__answer{
 				display: none; /* Скрываем ответы по умолчанию */
-				padding: 40px 50px;
+				padding: 30px 50px;
 				color: #BBD3FF;
-				font-size: 30px;
+				font-size: 20px;
 				a{
 					color: #BBD3FF;
 					text-decoration: underline;

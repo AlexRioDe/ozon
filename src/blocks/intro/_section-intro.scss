@@ -1,5 +1,5 @@
 .section-intro{
-  min-height: 900px;
+  min-height: 650px;
   //background-image: url("../images/intro.png");
   background-size: cover;
   background-position: center;
@@ -45,7 +45,8 @@
   }
   &>img{
     position: relative;
-    margin-top: -100px;
+    margin-top: -54px;
+    max-width: 840px;
     z-index: 1;
     &.animate{
       opacity: 0;
@@ -61,10 +62,10 @@
   }
   .btn-intro{
     background: $color_red_1;
-    height: 80px;
+    height: 60px;
     max-width: max-content;
-    padding: 12px 50px;
-    font-size: 37px;
+    padding: 11px 40px;
+    font-size: 23px;
     font-weight: 500;
     color: $color_white;
     border-radius: 32px;
