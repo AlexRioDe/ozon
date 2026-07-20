@@ -29,7 +29,7 @@
     flex: 1;
     &_info{
       font-weight: 400;
-      font-size: 30px;
+      font-size: 20px;
       color: #BBD3FF;
       padding-bottom: 34px;
       @media(max-width: 1024px) {
@@ -56,7 +56,7 @@
     }
     &_text{
       font-weight: 400;
-      font-size: 24px;
+      font-size: 20px;
       max-width: 454px;
       color: #bbd3ff;
       padding-bottom: 24px;
@@ -68,9 +68,9 @@
     }
   }
   &__image{
-    height: 384px;
+    height: 364px;
     background-repeat: no-repeat;
-    width: 546px;
+    width: 456px;
     background-image: url("../images/blue.png");
     background-size: contain;
     background-position: center;

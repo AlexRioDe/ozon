@@ -2,11 +2,11 @@ header{
   text-align: center;
 }
 .header{
-  position: fixed;
+  position: absolute;
   top:0;
   left:0;
   width: 100%;
-  line-height: 80px;
+  line-height: 50px;
   z-index: 10;
   padding: 10px 0;
   //background: $color-white;
@@ -28,6 +28,7 @@ header{
     font-size: 20px;
     img{
       vertical-align: middle;
+      max-width: 85px;
     }
   }
   &-nav{
@@ -43,7 +44,7 @@ header{
       vertical-align: top;
       //margin: 0 15px;
       position: relative;
-      font-size: 20px;
+      font-size: 16px;
       @media(max-width: 1199px) {
         font-size: 16px;
       }

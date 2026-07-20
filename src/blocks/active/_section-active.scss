@@ -1,6 +1,6 @@
 .section-active{
-	padding-top: 156px;
-	padding-bottom: 76px;
+	padding-top: 136px;
+	padding-bottom: 66px;
 	color: #122941;
 	//background: linear-gradient(180.38deg, #f4f3fb 0.33%, #4888fb 58.63%);
 	background-image: url("../images/active-bg.jpg");
@@ -22,7 +22,7 @@
 			padding-bottom: 24px;
 		}
 		&_title{
-			font-size: 52px;
+			font-size: 44px;
 			font-weight: bold;
 			color: #122941;
 			@media(max-width: 1024px) {
@@ -31,8 +31,8 @@
 			}
 		}
 		&_text{
-			font-size: 24px;
-			max-width: 600px;
+			font-size: 20px;
+			max-width: 580px;
 			width: 100%;
 			@media(max-width: 1024px) {
 				font-size: 18px;
@@ -98,12 +98,12 @@
 			}
 			
 			&-top{
-				font-size: 16px;
+				font-size: 14px;
 				padding-bottom: 24px;
 				color: $color-white;
 			}
 			&-center{
-				font-size: 30px;
+				font-size: 26px;
 				font-weight: bold;
 				color: #BBD3FF;
 				@media(max-width: 1024px) {
@@ -111,10 +111,10 @@
 				}
 			}
 			&-bottom{
-				font-size: 20px;
+				font-size: 16px;
 				color: $color-white;
 				@media(max-width: 1024px) {
-					font-size: 18px;
+					font-size: 16px;
 				}
 				b{
 					font-weight: bold;
@@ -138,7 +138,7 @@
 				padding: 30px;
 				text-align: center;
 				&--title{
-					font-size: 20px;
+					font-size: 16px;
 					color: #BBD3FF;
 					padding-bottom: 12px;
 					@media(max-width: 1024px) {
@@ -149,10 +149,13 @@
 					font-size: 30px;
 					font-weight: bold;
 					color: $color-white;
-					max-width: 270px;
+					max-width: 370px;
 					margin: 0 auto;
 					@media(max-width: 1024px) {
 						font-size: 24px;
+						br{
+							display: none;
+						}
 					}
 				}
 			}
